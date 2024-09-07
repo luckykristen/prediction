@@ -1,0 +1,124 @@
+body {
+    background-image: url(magicball.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+#btn {
+    padding: 30px;
+    position: fixed;
+    border-radius: 30px;
+    background-color: beige;
+    font-size: 25px;
+    font-family: "Handjet", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+      "ELGR" 1,
+      "ELSH" 2;
+}
+
+#btn:hover {
+    background-color: #bc6394;
+    color: white;
+    transition-duration: 1s;
+    cursor: pointer;
+    border: white 2px solid;
+}
+
+#par {
+    display: none;
+    margin-top: 400px;
+    border: black 2px solid;
+    border-radius: 50px;
+    width: 70%;
+    color: beige;
+    text-align: center;
+    font-size: 40px;
+    background-color: #aa487dc8;
+    padding: 30px;
+    font-family: "Handjet", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+      "ELGR" 1,
+      "ELSH" 2;
+}
+
+
+@keyframes ball {
+    0% {
+        transform: translateY(0);
+        opacity: .5;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 2;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(90vh);
+        opacity: .5;
+    }
+}
+
+.balls img:nth-child(1) {
+    animation-delay: 1s;
+    width: 45px;
+}
+
+.balls img:nth-child(2) {
+    animation-delay: 2s;
+    width: 45px;
+}
+
+.balls img:nth-child(3) {
+    animation-delay: 5s;
+    width: 45px;
+}
+
+.balls img:nth-child(4) {
+    animation-delay: 2s;
+    width: 45px;
+}
+
+.balls img:nth-child(5) {
+    animation-delay: 1s;
+    width: 45px;
+}
+
+.balls img:nth-child(6) {
+    animation-delay: 2.5s;
+    width: 45px;
+}
+
+.balls img {
+    width: 50px;
+    animation: ball 7s linear infinite;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.balls {
+    display: flex;
+    justify-content: space-around;
+}
+
